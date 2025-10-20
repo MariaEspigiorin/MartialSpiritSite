@@ -940,3 +940,63 @@ contact-info {
 .full-card {
   grid-column: 1 / -1; /* Faz o card ocupar todas as colunas */
 }
+
+/* rodape */
+
+/* .site-footer {
+  background-color: #5a2500;
+  color: #fff;
+  padding: 20px 5%;
+  border-top: 2px solid #d87f0b;
+  position: relative; 
+  overflow: hidden;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.footer-text {
+  text-align: center;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+
+.footer-logo {
+  position: absolute;
+  right: 0; 
+  bottom: -10px; 
+  padding-right: 0; 
+}
+
+.footer-logo img {
+  height: 75px;
+  opacity: 0.95;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.footer-logo img:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+
+@media (max-width: 700px) {
+  .footer-content {
+    flex-direction: column;
+    position: static;
+  }
+
+  .footer-logo {
+    position: static;
+    margin-top: 10px;
+  }
+
+  .footer-logo img {
+    height: 60px;
+  }
+} */

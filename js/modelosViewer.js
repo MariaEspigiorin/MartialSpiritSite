@@ -85,6 +85,15 @@ function abrirViewer(modelPath) {
   scene.add(key);
 
   const loader = new GLTFLoader();
+
+  // loader.register((parser) => {
+  //   return {
+  //     beforeRoot: (gltf) => {
+  //       gltf.nodes = gltf.nodes.filter((n) => n !== null); // remove nós nulos
+  //     },
+  //   };
+  // });
+
   loader.load(
     `./models/${modelPath}`,
     (gltf) => {
