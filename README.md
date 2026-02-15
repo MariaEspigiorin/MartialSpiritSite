@@ -1,4 +1,7 @@
 # 🥋 Martial Spirit — Site do Projeto
+![Status](https://img.shields.io/badge/status-em%20desenvolvimento-orange)
+![Made with](https://img.shields.io/badge/made%20with-Unity-black)
+![Website](https://img.shields.io/badge/site-online-brightgreen)
 
 > Website oficial do projeto **Martial Spirit**, desenvolvido como Trabalho de Conclusão de Curso (TCC) no Curso Médio Técnico Integrado de Programação de Jogos Digitais no IFPR — Campus Curitiba.
 
