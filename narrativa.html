@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Narrativa | Martial Spirit</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="img/logo2.png">
+  <link rel="apple-touch-icon" href="img/logo2.png">
+
 </head>
 
 <body>
@@ -16,14 +19,17 @@
         <img src="img/logo2.png" alt="Logo Martial Spirit">
       </a>
     </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="narrativa.html" class="active">Narrativa</a></li>
-        <li><a href="modelos.html">Modelos 3D</a></li>
-        <li><a href="codigo.html">Código</a></li>
-        <li><a href="contato.html">Equipe</a></li>
+    <nav class="nav">
+      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+
+      <ul class="nav-list">
+        <li><a href="index.html#inicio" class="nav-link">Início</a></li>
+        <li><a href="index.html#projeto" class="nav-link">Projeto</a></li>
+        <li><a href="index.html#produto" class="nav-link">Jogo</a></li>
+        <li><a href="index.html#processo" class="nav-link">Processo</a></li>
+        <li><a href="modelos.html" class="nav-link">Modelos 3D</a></li>
+        <li><a href="codigo.html" class="nav-link">Código</a></li>
+        <li><a href="contato.html" class="nav-link">Equipe</a></li>
       </ul>
     </nav>
   </header>
@@ -67,6 +73,8 @@
     <p>© 2025 <strong>ByteCompilers</strong> — Projeto <em>Martial Spirit</em></p>
     <p>Desenvolvido por Maria Espigiorin</p>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -2,48 +2,54 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Códigos | Martial Spirit</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Códigos | Martial Spirit</title>
+    <link rel="icon" type="image/png" href="img/logo2.png">
+    <link rel="apple-touch-icon" href="img/logo2.png">
 
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/vs2015.min.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/vs2015.min.css" />
 </head>
 
 <body>
-  <!-- HEADER -->
-  <header>
-    <div class="logo">
-      <a href="index.html"><img src="img/logo2.png" alt="Logo Martial Spirit" /></a>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="narrativa.html">Narrativa</a></li>
-        <li><a href="modelos.html">Modelos 3D</a></li>
-        <li><a href="codigo.html" class="active">Código</a></li>
-        <li><a href="contato.html">Equipe</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="img/logo2.png" alt="Logo Martial Spirit" /></a>
+        </div>
+        <nav class="nav">
+            <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
 
-  <!-- SEÇÃO DE CÓDIGOS -->
-  <section class="codigo-section">
-    <div class="codigo-overlay"></div>
+            <ul class="nav-list">
+                <li><a href="index.html#inicio" class="nav-link">Início</a></li>
+                <li><a href="index.html#projeto" class="nav-link">Projeto</a></li>
+                <li><a href="index.html#produto" class="nav-link">Jogo</a></li>
+                <li><a href="index.html#processo" class="nav-link">Processo</a></li>
+                <li><a href="modelos.html" class="nav-link">Modelos 3D</a></li>
+                <li><a href="codigo.html" class="nav-link">Código</a></li>
+                <li><a href="contato.html" class="nav-link">Equipe</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="codigo-content">
-      <h1>Códigos do Projeto</h1>
+    <!-- SEÇÃO DE CÓDIGOS -->
+    <section class="codigo-section">
+        <div class="codigo-overlay"></div>
 
-      <div class="tabs">
-        <div class="tab active" data-tab="codigo1">EnemyController.cs</div>
-        <div class="tab" data-tab="codigo2">FighterController.cs</div>
-        <div class="tab" data-tab="codigo3">Alvobalanca.cs</div>
-      </div>
+        <div class="codigo-content">
+            <h1>Códigos do Projeto</h1>
 
-      <div class="editor-box">
-        <div id="codigo1" class="codigo-bloco active">
-          <pre><code class="language-csharp">
+            <div class="tabs">
+                <div class="tab active" data-tab="codigo1">EnemyController.cs</div>
+                <div class="tab" data-tab="codigo2">FighterController.cs</div>
+                <div class="tab" data-tab="codigo3">Alvobalanca.cs</div>
+            </div>
+
+            <div class="editor-box">
+                <div id="codigo1" class="codigo-bloco active">
+                    <pre><code class="language-csharp">
 using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
@@ -220,14 +226,14 @@ public class EnemyController : MonoBehaviour
     }
 }
           </code></pre>
-          <div class="codigo-resumo">
-            <h3>Resumo:</h3>
-            <p>Controla o comportamento do inimigo, incluindo perseguição, ataques, consumo e regeneração de estamina, recebimento de dano e morte. Também atualiza as barras de vida e estamina dinamicamente.</p>
-          </div>
-        </div>
+                    <div class="codigo-resumo">
+                        <h3>Resumo:</h3>
+                        <p>Controla o comportamento do inimigo, incluindo perseguição, ataques, consumo e regeneração de estamina, recebimento de dano e morte. Também atualiza as barras de vida e estamina dinamicamente.</p>
+                    </div>
+                </div>
 
-        <div id="codigo2" class="codigo-bloco">
-          <pre><code class="language-csharp">
+                <div id="codigo2" class="codigo-bloco">
+                    <pre><code class="language-csharp">
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -441,14 +447,14 @@ public class FighterController : MonoBehaviour
 }
 
           </code></pre>
-          <div class="codigo-resumo">
-            <h3>Resumo:</h3>
-            <p>Gerencia o personagem principal, permitindo executar golpes e defesas com consumo de estamina, interagir com o inimigo, exibir diálogos iniciais e controlar as barras de vida e energia durante a luta.</p>
-          </div>
-        </div>
+                    <div class="codigo-resumo">
+                        <h3>Resumo:</h3>
+                        <p>Gerencia o personagem principal, permitindo executar golpes e defesas com consumo de estamina, interagir com o inimigo, exibir diálogos iniciais e controlar as barras de vida e energia durante a luta.</p>
+                    </div>
+                </div>
 
-        <div id="codigo3" class="codigo-bloco">
-          <pre><code class="language-csharp">
+                <div id="codigo3" class="codigo-bloco">
+                    <pre><code class="language-csharp">
 using UnityEngine;
 using System.Collections;
 
@@ -517,38 +523,39 @@ IEnumerator BalancarRoutineEixo(float anguloX, float anguloY, float anguloZ)
     }
 }
           </code></pre>
-          <div class="codigo-resumo">
-            <h3>Resumo:</h3>
-            <p>Cria um efeito de balanço suave em objetos, oscilando sua rotação entre dois ângulos. Ideal para dar movimento a alvos ou elementos interativos da cena.</p>
-          </div>
+                    <div class="codigo-resumo">
+                        <h3>Resumo:</h3>
+                        <p>Cria um efeito de balanço suave em objetos, oscilando sua rotação entre dois ângulos. Ideal para dar movimento a alvos ou elementos interativos da cena.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="site-footer">
-    <p>© 2025 <strong>ByteCompilers</strong> — Projeto <em>Martial Spirit</em></p>
-    <p>Desenvolvido por Maria Espigiorin</p>
-  </footer>
+    <footer class="site-footer">
+        <p>© 2025 <strong>ByteCompilers</strong> — Projeto <em>Martial Spirit</em></p>
+        <p>Desenvolvido por Maria Espigiorin</p>
+    </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-  <script>hljs.highlightAll();</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 
-  <script>
-    const tabs = document.querySelectorAll('.tab');
-    const blocos = document.querySelectorAll('.codigo-bloco');
+    <script>
+        const tabs = document.querySelectorAll('.tab');
+        const blocos = document.querySelectorAll('.codigo-bloco');
 
-    tabs.forEach(tab => {
-      tab.addEventListener('click', () => {
-        tabs.forEach(t => t.classList.remove('active'));
-        tab.classList.add('active');
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
 
-        const alvo = tab.getAttribute('data-tab');
-        blocos.forEach(b => b.classList.remove('active'));
-        document.getElementById(alvo).classList.add('active');
-      });
-    });
-  </script>
+                const alvo = tab.getAttribute('data-tab');
+                blocos.forEach(b => b.classList.remove('active'));
+                document.getElementById(alvo).classList.add('active');
+            });
+        });
+    </script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
